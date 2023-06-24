@@ -1,7 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 142526C1
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)phy_position_x += sign (oMeson.x - x) * speed_enemy$(13_10)phy_position_y + sign (oMeson.y - y) * speed_enemy$(13_10)"
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)if hp <= 0 {$(13_10)instance_destroy()$(13_10)}$(13_10)$(13_10)$(13_10)mp_potential_step_object(oMeson.x, oMeson.y, 2, oGround)"
 /// @description Execute Code
-phy_position_x += sign (oMeson.x - x) * speed_enemy
-phy_position_y + sign (oMeson.y - y) * speed_enemy
+if hp <= 0 {
+instance_destroy()
+}
+
+
+mp_potential_step_object(oMeson.x, oMeson.y, 2, oGround)
