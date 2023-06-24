@@ -26,11 +26,16 @@
   "physicsGroup": 1,
   "physicsKinematic": false,
   "physicsLinearDamping": 0.1,
-  "physicsObject": false,
+  "physicsObject": true,
   "physicsRestitution": 0.1,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":64.0,"y":0.0,},
+    {"x":64.0,"y":64.0,},
+    {"x":0.0,"y":64.0,},
+  ],
   "physicsStartAwake": true,
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"indexWall","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":1.0,"rangeMin":-1.0,"value":"0","varType":1,},
